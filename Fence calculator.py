@@ -49,7 +49,7 @@ while again == "":
             print()
 
     perimeter = (2 * width) + (2 * length)
-    cost = (2 * width) + (2 * length) * cost
+    cost = (2 * width) + (2 * length) * cost_per_metre
     print()
     print("The Perimeter of your fence is {}m".format(perimeter))
     print("The cost for your fence is ${}".format(cost))
