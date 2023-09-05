@@ -41,7 +41,7 @@ while again == "":
     loop_3 = False
     while not loop_3:
         try:
-            cost = float(input("please enter how much a fence costs per metre: $"))
+            cost_per_metre = float(input("please enter how much a fence costs per metre: $"))
             loop_3 = True
         except ValueError:
             print()
@@ -49,10 +49,10 @@ while again == "":
             print()
 
     perimeter = (2 * width) + (2 * length)
-    cost_per_metre = (2 * width) + (2 * length) * cost
+    cost = (2 * width) + (2 * length) * cost
     print()
     print("The Perimeter of your fence is {}m".format(perimeter))
-    print("The cost for your fence is ${}".format(cost_per_metre))
+    print("The cost for your fence is ${}".format(cost))
     print()
 
     again = input("press <enter> to rerun, any other key to end: ")
