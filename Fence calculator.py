@@ -42,7 +42,12 @@ while again == "":
     while not loop_3:
         try:
             cost_per_metre = float(input("please enter how much a fence costs per metre: $"))
-            loop_3 = True
+            if cost_per_metre > 0:
+                loop_3 = True
+            else:
+                print()
+                print(error)
+                print()
         except ValueError:
             print()
             print(error_int)
